@@ -45,7 +45,7 @@ Ship.findAll = function (result) {
 };
 Ship.update = function (id, shp, result) {
     connection.query("UPDATE ship SET ? WHERE Id_ship = ?",
-        [shp.Type, id],
+        [shp, id],
         function (err, res) {
             if (err) {
                 console.log("error: ", err);
