@@ -9,4 +9,8 @@ app.get('/',(req,res)=>{
 })
 const ShipRoutes = require('./router/ship.routes');
 app.use('/api/ship',ShipRoutes);
+const TypeRoutes = require('./router/type.routes');
+app.use('/api/type',TypeRoutes);
+const PortRoutes = require('./router/port.routes');
+app.use('/api/port',PortRoutes);
 app.listen(PORT,()=> console.log("SERVER START !!!"));
